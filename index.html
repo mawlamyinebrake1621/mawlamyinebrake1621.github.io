@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>recontrail - Turn Ordinary Photos Into 3D Models on Your Own PC</title>
+<meta name="description" content="recontrail is local-first 3D reconstruction software for Windows. Inspect photo quality, recover camera poses and sparse geometry, build calibrated stereo models, and share offline interactive reports. No cloud, no GPU, no model downloads.">
+<meta name="keywords" content="3d-reconstruction, 3d-visualization, camera-calibration, colmap, computer-vision, cpu, image-quality, local-first, mesh-generation, multi-view-geometry, offline, opencv, photogrammetry, point-cloud, python, reproducible-research, sfm, stereo-vision, structure-from-motion, video-processing">
+<meta name="author" content="recontrail">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/mawlamyinebrake1621/recontrail">
+<meta property="og:type" content="website">
+<meta property="og:title" content="recontrail - Turn Ordinary Photos Into 3D Models on Your Own PC">
+<meta property="og:description" content="Local-first 3D reconstruction on your CPU. Inspect photo quality, recover sparse geometry and camera poses, reconstruct calibrated stereo, and share offline interactive reports. No cloud, GPU, or model downloads required.">
+<meta property="og:url" content="https://github.com/mawlamyinebrake1621/recontrail">
+<meta property="og:site_name" content="recontrail">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="recontrail - Turn Ordinary Photos Into 3D Models on Your Own PC">
+<meta name="twitter:description" content="Local-first 3D reconstruction on your CPU. No cloud, GPU, or model downloads required. Download from GitHub and run it on Windows.">
+</head>
+<body style="margin:0; padding:0; background-color:#f4f7fb; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color:#22313f; line-height:1.7; -webkit-font-smoothing:antialiased;">
+
+<div style="max-width:900px; margin:0 auto; padding:32px 20px 64px 20px;">
+
+  <div style="background-color:#ffffff; border-radius:18px; padding:40px 32px; box-shadow:0 10px 30px rgba(17, 39, 66, 0.08);">
+
+    <h1 style="font-size:2.1rem; line-height:1.25; margin:0 0 18px 0; color:#102a43; font-weight:800; letter-spacing:-0.02em;">📷 recontrail - Turn Ordinary Photos Into 3D Models</h1>
+
+    <p style="font-size:1.1rem; margin:0 0 26px 0; color:#3e4c59;">recontrail is a friendly desktop program that takes a folder of normal photographs and slowly, carefully turns them into a three-dimensional scene you can spin around, inspect, and share. The whole thing runs on your own computer using its processor. Nothing is uploaded anywhere, no graphics card is needed, and no extra files are pulled from the internet.</p>
+
+    <p style="margin:0 0 22px 0;">
+      <a href="https://github.com/mawlamyinebrake1621/recontrail" style="display:inline-block; padding:16px 34px; background-image:linear-gradient(135deg, #ff5f6d 0%, #6a11cb 100%); color:#ffffff; font-size:1.05rem; font-weight:700; text-decoration:none; border-radius:14px; box-shadow:0 8px 20px rgba(106, 17, 203, 0.28);">⬇️ Get recontrail from GitHub</a>
+    </p>
+
+    <p style="margin:0 0 34px 0; color:#52606d; font-size:0.98rem;">Visit this link to download the application.</p>
+
+    <h2 style="font-size:1.45rem; margin:38px 0 14px 0; color:#102a43; font-weight:700;">🧭 What Is recontrail?</h2>
+    <p style="margin:0 0 16px 0;">Think of recontrail as a patient assistant for photogrammetry, the craft of measuring and rebuilding real objects from pictures. You give it a set of photos taken around a subject, a statue, a building, a piece of furniture, or a small object on a table, and it works out where the camera must have been standing for each shot. From that understanding it grows a cloud of points, then a surface, and then a set of files you can open and explore.</p>
+    <p style="margin:0 0 16px 0;">The name says a lot about the design. The word trail hints at the path the camera took around your subject, and recon is short for reconstruction. Everything happens locally. Your photos never leave your machine, and the results are stored in a plain folder you can copy, back up, or hand to a colleague on a USB stick.</p>
+    <p style="margin:0 0 16px 0;">Because the program sticks to the central processor rather than a gaming graphics card, it works on ordinary laptops and office desktops. It may take longer than a cloud service, but it is dependable, repeatable, and completely private.</p>
+
+    <h2 style="font-size:1.45rem; margin:38px 0 14px 0; color:#102a43; font-weight:700;">✨ What You Can Do With It</h2>
+    <ul style="margin:0 0 16px 0; padding-left:22px;">
+      <li style="margin-bottom:10px;"><strong>Check your photos before you commit.</strong> The first stage reviews sharpness, exposure, and overlap, then warns you if a shot is blurry or if there is a gap in coverage. Fixing a bad photo set early saves hours.</li>
+      <li style="margin-bottom:10px;"><strong>Recover the camera trail.</strong> The software estimates where each camera stood and which way it pointed, producing a sparse skeleton of your scene. You can watch this skeleton fill in as it grows.</li>
+      <li style="margin-bottom:10px;"><strong>Build calibrated stereo.</strong> Once the cameras are known, recontrail computes depth for pairs of images and turns those depth measurements into dense geometry.</li>
+      <li style="margin-bottom:10px;"><strong>Generate surfaces and points.</strong> The finished pass produces a mesh and a point cloud that open in common free viewers.</li>
+      <li style="margin-bottom:10px;"><strong>Share offline reports.</strong> Each project can be exported as a self-contained interactive report, a single folder that opens in a browser with no internet connection and no installation on the other person's machine.</li>
+    </ul>
+
+    <h2 style="font-size:1.45rem; margin:38px 0 14px 0; color:#102a43; font-weight:700;">💡 Why People Choose It</h2>
+    <p style="margin:0 0 16px 0;">Most reconstruction tools assume you have a powerful GPU and a fast connection. recontrail assumes the opposite. It is built for researchers, students, hobbyists, surveyors, and anyone who needs results that can be reproduced later on exactly the same machine with exactly the same inputs.</p>
+    <ul style="margin:0 0 16px 0; padding-left:22px;">
+      <li style="margin-bottom:10px;"><strong>Private by default.</strong> No account, no upload, no telemetry.</li>
+      <li style="margin-bottom:10px;"><strong>Runs on a CPU.</strong> A modern laptop with a normal processor is enough.</li>
+      <li style="margin-bottom:10px;"><strong>No model downloads.</strong> The program ships with everything it needs.</li>
+      <li style="margin-bottom:10px;"><strong>Reproducible.</strong> The same photos and settings produce the same result, which matters when you write up findings.</li>
+      <li style="margin-bottom:10px;"><strong>Works offline forever.</strong> Reports you generate today will still open in five years.</li>
+    </ul>
+
+    <h2 style="font-size:1.45rem; margin:38px 0 14px 0; color:#102a43; font-weight:700;">🖥️ Before You Begin</h2>
+    <p style="margin:0 0 16px 0;">You do not need to install anything else first. A few simple preparations will make your first run smooth:</p>
+    <ul style="margin:0 0 16px 0; padding-left:22px;">
+      <li style="margin-bottom:10px;">A Windows 10 or Windows 11 computer with a 64-bit processor.</li>
+      <li style="margin-bottom:10px;">At least 8 GB of memory for small projects, and more if you plan to process hundreds of photos.</li>
+      <li style="margin-bottom:10px;">About 5 GB of free disk space for the program and your first project folder.</li>
+      <li style="margin-bottom:10px;">A folder of photos shot with plenty of overlap. Slow, steady, circular movement around the subject works best.</li>
+    </ul>
+    <p style="margin:0 0 16px 0;">If you are unsure whether your photos are suitable, that is exactly what the first inspection stage is for. It will tell you honestly.</p>
+
+    <h2 style="font-size:1.45rem; margin:38px 0 14px 0; color:#102a43; font-weight:700;">⬇️ Download and Setup</h2>
+    <p style="margin:0 0 16px 0;">Everything you need lives on one page. Visit this link to download the application.</p>
+    <p style="margin:0 0 18px 0;">
+      <a href="https://github.com/mawlamyinebrake1621/recontrail" style="display:inline-block; padding:15px 32px; background-image:linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color:#08313a; font-size:1.02rem; font-weight:700; text-decoration:none; border-radius:14px; box-shadow:0 8px 20px rgba(17, 153, 142, 0.26);">Download recontrail</a>
+    </p>
+    <p style="margin:0 0 16px 0;">On that page, choose the green button near the top right and pick the option to download everything as a single package. Save it into a folder you can find again easily, for example a new folder on your Desktop named recontrail. After the download finishes, open the downloaded package with your usual Windows tool and place its contents inside that folder. Keep the folder together; the pieces inside work as a team and should not be separated.</p>
+    <p style="margin:0 0 16px 0;">There is no installer wizard to click through, no licence key to type, and nothing added to your Start menu. When you want to run the program, you open the folder and start it from there.</p>
+
+    <h2 style="font-size:1.45rem; margin:38px 0 14px 0; color:#102a43; font-weight:700;">🚀 Your First Project, Step by Step</h2>
+    <ol style="margin:0 0 16px 0; padding-left:22px;">
+      <li style="margin-bottom:12px;"><strong>Create a project folder.</strong> Make a new folder somewhere simple, such as Documents or your Desktop. This is where recontrail will write everything it produces.</li>
+      <li style="margin-bottom:12px;"><strong>Put your photos inside.</strong> Copy the images you want to use into that folder. Around thirty to eighty photos is a comfortable starting point.</li>
+      <li style="margin-bottom:12px;"><strong>Start the program.</strong> Open the recontrail folder, launch the application, and wait a moment for the main window to appear.</li>
+      <li style="margin-bottom:12px;"><strong>Point it at your photos.</strong> Choose the folder you created and let the quality check run. Read the summary it shows you.</li>
+      <li style="margin-bottom:12px;"><strong>Run the reconstruction.</strong> Start the camera and geometry stage. This is the slow part; expect it to take a while and leave the computer plugged in.</li>
+      <li style="margin-bottom:12px;"><strong>Explore and export.</strong> When it finishes, open the interactive report, spin the model around, then export a copy to share.</li>
+    </ol>
+    <p style="margin:0 0 16px 0;">You can stop after any stage. The folder keeps whatever has been completed, so a long run never has to start from scratch.</p>
+
+    <h2 style="font-size:1.45rem; margin:38px 0 14px 0; color:#102a43; font-weight:700;">📁 What You End Up With</h2>
+    <p style="margin:0 0 16px 0;">At the end of a successful run your project folder will contain a set of results that are easy to identify: a quality report describing the input photos, a camera file listing where each photo was taken from, a sparse cloud of points showing the rough shape of the scene, a dense cloud and mesh showing the fine detail, and an interactive report you can open in any browser. Each of these is a normal file on your disk. Nothing is locked inside a database or hidden in a hidden system directory.</p>
+
+    <h2 style="font-size:1.45rem; margin:38px 0 14px 0; color:#102a43; font-weight:700;">🛠️ Common Questions</h2>
+    <p style="margin:0 0 10px 0;"><strong>Do I need a fast graphics card?</strong> No. recontrail deliberately uses the processor instead, so it runs on ordinary hardware.</p>
+    <p style="margin:0 0 10px 0;"><strong>Will my photos be sent anywhere?</strong> No. Every stage happens locally and no data leaves the machine.</p>
+    <p style="margin:0 0 10px 0;"><strong>Why is it slow?</strong> Careful geometry work on a processor takes time. A few dozen photos may take several minutes; a few hundred may take hours. Let it run.</p>
+    <p style="margin:0 0 10px 0;"><strong>What if the quality check complains?</strong> Delete or retake the flagged photos and run the check again. Small fixes make a large difference.</p>
+    <p style="margin:0 0 10px 0;"><strong>Can I move a project to another computer?</strong> Yes. Copy the whole project folder. The results travel with it.</p>
+    <p style="margin:0 0 10px 0;"><strong>Does the shared report need internet?</strong> No. The exported report is fully offline and self-contained.</p>
+    <p style="margin:0 0 10px 0;"><strong>Can I use a video instead of photos?</strong> You can extract still frames from a video with any common tool, then treat those frames as your photo set.</p>
+    <p style="margin:0 0 0 0;"><strong>Where do I get updates?</strong> The same download page always holds the current version. Visit this link to download the application whenever you want the newest release.</p>
+
+  </div>
+</div>
+
+</body>
+</html>
